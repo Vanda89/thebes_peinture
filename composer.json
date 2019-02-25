@@ -1,0 +1,42 @@
+{
+    "name": "vanda89/thebes_peinture",
+    "description": "Site WordPress de l'entreprise Thebes Peinture",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vanda89",
+            "email": "sandrinealcazar@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "repositories": [{
+        "type": "composer",
+        "url": "https://wpackagist.org"
+    }],
+    "require": {
+        "php": ">=7.0",
+        "johnpbloch/wordpress": "^5.0.1",
+        "wpackagist-theme/twentynineteen": "^1.1",
+        "wpackagist-theme/one-page-express": "^1.2.8",
+        "wpackagist-plugin/one-page-express-companion": "^1.4.1",
+        "wpackagist-plugin/elementor": "^2.3.2",
+        "wpackagist-plugin/elementor-addon-widgets": "^1.2.6",
+        "wpackagist-plugin/elementor-ninja-forms": "^1.0.0",
+        "wpackagist-plugin/ninja-forms": "^3.3.19",
+        "wpackagist-plugin/akismet": "^4.1",
+        "wpackagist-plugin/menu-icons": "^0.11.4",
+        "wpackagist-plugin/wordpress-seo": "^9.3",
+        "wpackagist-plugin/duracelltomi-google-tag-manager": "1.9.2"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    }
+}

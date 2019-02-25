@@ -1,0 +1,8 @@
+vendor
+wp
+/content/themes/one-page-express
+/content/plugins
+/content/languages
+/content/themes/twentynineteen
+/content/upgrade
+wp-config.php
