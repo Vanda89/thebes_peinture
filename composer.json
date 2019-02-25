@@ -21,10 +21,9 @@
         "wpackagist-plugin/one-page-express-companion": "^1.4.1",
         "wpackagist-plugin/elementor": "^2.3.2",
         "wpackagist-plugin/elementor-addon-widgets": "^1.2.6",
-        "wpackagist-plugin/elementor-ninja-forms": "^1.0.0",
+        "wpackagist-plugin/essential-addons-for-elementor-lite": "^2.9.4",
         "wpackagist-plugin/ninja-forms": "^3.3.19",
         "wpackagist-plugin/akismet": "^4.1",
-        "wpackagist-plugin/menu-icons": "^0.11.4",
         "wpackagist-plugin/wordpress-seo": "^9.3",
         "wpackagist-plugin/duracelltomi-google-tag-manager": "1.9.2"
     },
