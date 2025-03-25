@@ -1,8 +1,27 @@
 vendor
-wp
-/content/themes/one-page-express
-/content/plugins
-/content/languages
-/content/themes/twentynineteen
-/content/upgrade
+# Core WordPress
+wp-admin/
+wp-includes/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/debug.log
 wp-config.php
+
+# Thèmes par défaut
+content/themes/twentytwentyfive/
+content/themes/twentytwentyfour/
+content/themes/twentytwentythree/
+
+# Fichiers générés
+content/uploads/
+content/uploads/elementor/
+*.log
+composer-setup.php
+content/debug.log
+
+# Fichiers système
+license.txt
+readme.html
+wp-*.php
+*.php~
+xmlrpc.php

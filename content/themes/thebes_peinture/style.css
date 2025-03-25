@@ -1,9 +1,9 @@
 /*
  Theme Name:   thebes Peinture
- Theme URI:    http: //thebes-peinture.fr/
+ Theme URI:    http: //thebes-peinture.sandrinealcazar.ovh/
  Description:  Thebes Peinture Child Theme
  Author:       Sandrine Alcazar
- Author URI:   http: //couleurs-du-web.fr/
+ Author URI:   https://sandrinealcazar.ovh/
  Template:     /one-page-express
  Version:      1.0.0
  Name:         style.css
@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'edoregular';
   src: url('fonts/edo_regular_macroman/edo-webfont.eot');
-  src: url('fonts/edo_regular_macroman/edo-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/edo_regular_macroman/edo-webfont.woff2') format('woff2'), url('fonts/edo_regular_macroman/edo-webfont.woff') format('woff'), url('fonts/edo_regular_macroman/edo-webfont.ttf') format('truetype'), url('fonts/edo_regular_macroman/edo-webfont.svg#edoregular') format('svg');
+  src: url('fonts/edo_regular_macroman/edo-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/edo_regular_macroman/edo-webfont.woff') format('woff'), url('fonts/edo_regular_macroman/edo-webfont.ttf') format('truetype'), url('fonts/edo_regular_macroman/edo-webfont.svg#edoregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -60,7 +60,7 @@ body {
   border: none;
 }
 
-div#drop_mainmenu_container ul.fm2_drop_mainmenu {
+#drop_mainmenu_container ul.fm2_drop_mainmenu {
   font-family: 'edoregular';
 }
 
@@ -113,7 +113,7 @@ p.header-subtitle {
   width: 100% !important;
 }
 
-h2 {
+#post-26 h2 {
   font-family: 'edoregular' !important;
   font-size: 2.3rem !important;
   text-align: center;
@@ -151,6 +151,7 @@ h2 {
 #counter-section .elementor-counter-title {
   font-size: 1.5rem;
   line-height: 1.2;
+	text-align:center;
 }
 
 #map iframe {
@@ -219,6 +220,11 @@ h2 {
   text-align: justify;
 }
 
+#estimate-text {
+	display: flex;
+    justify-content: center;
+}
+
 .eael-ninja-form {
   width: 100% !important;
 }
@@ -260,17 +266,29 @@ h2 {
 #legal-notices h2,
 #legal-notices h3 {
   color: #54595f;
-  font-family: 'edoregular';
   font-weight: 600;
 }
 
+
 @media (min-width: 765px) {
   .navigation-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	  gap: 1.5rem;
   }
+	
+	.navigation-wrapper .main_menu_col {
+		    display: flex
+;
+    width: 100%;
+    justify-content: center;
+	}
+	
+	.navigation-wrapper #drop_mainmenu{
+		width:100%;
+	}
 
   .logo_col {
     -webkit-box-pack: start;
@@ -281,8 +299,12 @@ h2 {
   }
 
   .main_menu_col {
-    height: 6rem;
+    height:2rem;
   }
+	
+	#drop_mainmenu_container {
+		width: 100%;
+	}
 
   #drop_mainmenu {
     text-align: center;
@@ -365,13 +387,12 @@ h2 {
   }
 
   #testimonials-section .elementor-widget-testimonial {
-    width: 50%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   .eael-ninja-form {
-    width: 80% !important;
+
   }
 }
 
@@ -392,10 +413,24 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
   }
-
-  #drop_mainmenu_container {
+	
+	.navigation-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+	
+	.navigation-wrapper .main_menu_col {
+		    display: flex
+;
+    width: 100%;
+    justify-content: center;
+	}
+	  #drop_mainmenu_container {
     width: 100%;
   }
+
 
   #drop_mainmenu {
     display: -webkit-box;
@@ -419,6 +454,7 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+	  flex-wrap:wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -429,9 +465,7 @@ h2 {
     margin: 0;
   }
 
-  #activities-section .elementor-inner-column {
-    width: 25%;
-  }
+ 
 
   #experience-section-text>.elementor-column-wrap>.elementor-widget-wrap {
     display: -webkit-box;
@@ -494,9 +528,7 @@ h2 {
     align-items: center;
   }
 
-  #testimonials-section .elementor-widget-testimonial {
-    width: 25%;
-  }
+ 
 
 
   #testimonials-section #testimonials-section-container {
@@ -536,12 +568,16 @@ h2 {
   }
 
   #estimate-section-text {
-    width: 60%;
+    width: 100%;
   }
 
-  .eael-ninja-form {
-    width: 60% !important;
-  }
+	#estimate-form  {
+		display: flex;
+    justify-content: center;
+	width:100%;
+    max-width:80%;
+}
+	}
 
   .data-protection-message {
     font-size: 1.1rem;
